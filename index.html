@@ -15,47 +15,73 @@
 </head>
 
 <body>
-    <div id="profilePage">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
+<div id="profilePage">
+    <nav class="navbar navbar-expand-md navbar-light bg-white" id="navigation">
+        
+        <a class="navbar-brand" href="index.html" id="polasek">Josef Polasek</a>
+
+        <ul class="position-relative top-0 start-25 stop-50 navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#countDown">Time left in Korea</a>
+            </li>
+        </ul>
     </nav>
 
+    <main>
+        <div class="intro">
+            <div class="leftP">
+                <p>Hello, I am Josef. I am currently an exchange student at <a href="https://enc.skku.edu/eng_enc/index.do" target="_blank">Sungkyunkwan University</a> in Suwon, South Korea. I am an aspiring front-end  developer.</p>
+                
+                <h2>Skills</h2>
+                <div id="skills">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><a href="">HTML</a></td>
+                            <td><a href="">CSS</a></td>
+                            <td><a href="">JavaScript</a></td>
+                            <td><a href="">Bootstrap</a></td>
+                            <td><a href="">JQuery</a></td>
+                            <td><a href="">GIT</a></td>
+                        </tr>
+                    </table>
+                </div>
 
-    </div>
+                <h2>Contact and profiles</h2>
+                <ul>
+                    <li>Email: <a href="mailto:josefpolasek12@gmail.com" target="_blank">josefpolasek12@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/josefpolasek" target="_blank">josefpolasek</a></li>
+                    <li>Code Cademy: <a href="https://www.codecademy.com/profiles/flyingAdler" target="_blank">@flyingAdler</a></li>
+                    <li>Stack Overflow: <a href="https://stackoverflow.com/users/15493878/adler" target="_blank">adler</a></li>
+                </ul>
+            </div>
+            <a href="">
+                <img src="photo.png" alt="Photo of Josef">
+            </a>
+        </div>
+
+        <div id="projects">
+            <h1>My Projects</h1>
+            <table>
+                <tr> <!-- first row -->
+                    <td><button type="button" class="btnCard" id="c1" name="button">1</button></td>
+                    <td><button type="button" class="btnCard" id="c2" name="button">2</button></td>
+                    <td><button type="button" class="btnCard" id="c3" name="button">3</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="countDown">
+            <h1>Time left in Korea</h1>
+            <iframe src="https://free.timeanddate.com/countdown/i81wkges/n204/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000080/cpc000/pcfff/tcfff/fs250/szw320/szh135/tac000/tptTime%20since%20Event%20started%20in/tpc000/mat%20/mac000/mpc000/iso2021-12-11T22:00:00" allowtransparency="true" frameborder="0" width="221" height="69"></iframe>
+        </div>
+    </main>
+
+</div>
+    
 </body>
 
 </html>
