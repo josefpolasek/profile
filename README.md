@@ -2,7 +2,7 @@
 
 First version of my profile page. This is a second homework for the subject Open Source Software Practice at SKKU. 
 You can view the page here: https://josefpolasek.github.io/profile/
-My page was highly inspired by the teacher's page: https://www.jaeminjo.com/
+My page was inspired by the teacher's page: https://www.jaeminjo.com/
 
 ## Requirements:
 ### Basic
