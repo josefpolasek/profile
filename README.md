@@ -23,16 +23,17 @@ interests, etc.
 10. Include at least three **CSS rules** in the CSS file
 
 ## ToDo (21/11/4)
-- [ ] deploy to GitHub Pages (create a link)
+- [x] deploy to GitHub Pages (create a link)
 - [ ] update 'My Projects' part 
   - [ ] projects card
   - [ ] link to projects on GitHub Pages and GitHub repo
   - [ ] overview of projects
   - [ ] projects to add:
     - [ ] ToDo App
-    - [ ] Back account
+    - [x] Back account/ATM
     - [ ] Quiz
     - [ ] Login page
+- [ ] add special effect onclick() on the picture
 - [ ] add a link to blog (Dopisy Babičce)
 - [ ] update 'Skills' part
 - [ ] remove Bootstrap (after grading)

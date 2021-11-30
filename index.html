@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <title>Profile Page</title>
+    <link id="websiteIcon" rel="icon" href="./images/profileDark.png" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,81 +14,93 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Profile Page</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="profilePage">
-    <nav class="navbar navbar-expand-md navbar-light bg-white" id="navigation">
-        
-        <a class="navbar-brand" href="index.html" id="polasek">Josef Polasek</a>
+    <div id="profilePage">
+        <nav class="navbar navbar-expand-md navbar-light bg-white" id="navigation">
 
-        <ul class="position-relative top-0 start-25 stop-50 navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#countDown">Time left in Korea</a>
-            </li>
-        </ul>
-    </nav>
+            <a class="navbar-brand" href="index.html" id="polasek">Josef Polasek</a>
 
-    <main>
-        <div class="intro">
-            <div class="leftP">
-                <p>Hello, I am Josef. I am currently an exchange student at <a href="https://enc.skku.edu/eng_enc/index.do" target="_blank">Sungkyunkwan University</a> in Suwon, South Korea. I am an aspiring front-end  developer.</p>
-                
-                <h2>Skills</h2>
-                <div id="skills">
-                    <table class="table table-borderless">
-                        <tr>
-                            <td><a href="">HTML</a></td>
-                            <td><a href="">CSS</a></td>
-                            <td><a href="">JavaScript</a></td>
-                            <td><a href="">Bootstrap</a></td>
-                            <td><a href="">JQuery</a></td>
-                            <td><a href="">GIT</a></td>
-                        </tr>
-                    </table>
+            <ul class="position-relative top-0 start-25 stop-50 navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#countDown">Time left in Korea</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="intro">
+                <div class="leftP">
+                    <p>Hello, I am Josef. I am currently an exchange student at <a
+                            href="https://enc.skku.edu/eng_enc/index.do" target="_blank">Sungkyunkwan University</a> in
+                        Suwon, South Korea. I am an aspiring front-end developer.</p>
+
+                    <h2>Skills</h2>
+                    <div id="skills">
+                        <table class="table table-borderless">
+                            <tr>
+                                <td><a href="">HTML</a></td>
+                                <td><a href="">CSS</a></td>
+                                <td><a href="">JavaScript</a></td>
+                                <td><a href="">Bootstrap</a></td>
+                                <td><a href="">JQuery</a></td>
+                                <td><a href="">GIT</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h2>Contact and profiles</h2>
+                    <ul>
+                        <li>Email: <a href="mailto:josefpolasek12@gmail.com"
+                                target="_blank">josefpolasek12@gmail.com</a></li>
+                        <li>GitHub: <a href="https://github.com/josefpolasek" target="_blank">josefpolasek</a></li>
+                        <li>Code Cademy: <a href="https://www.codecademy.com/profiles/flyingAdler"
+                                target="_blank">@flyingAdler</a></li>
+                        <li>Stack Overflow: <a href="https://stackoverflow.com/users/15493878/adler"
+                                target="_blank">adler</a></li>
+                    </ul>
                 </div>
-
-                <h2>Contact and profiles</h2>
-                <ul>
-                    <li>Email: <a href="mailto:josefpolasek12@gmail.com" target="_blank">josefpolasek12@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/josefpolasek" target="_blank">josefpolasek</a></li>
-                    <li>Code Cademy: <a href="https://www.codecademy.com/profiles/flyingAdler" target="_blank">@flyingAdler</a></li>
-                    <li>Stack Overflow: <a href="https://stackoverflow.com/users/15493878/adler" target="_blank">adler</a></li>
-                </ul>
+                <!-- <a href=""> -->
+                <img src="./images/profileDark.png" alt="Photo of Josef" id="profilePhoto">
+                <!-- <img src="profile.png" alt="cartoon version" class="drawnImg"> -->
+                <!-- </a> -->
             </div>
-            <a href="">
-                <img src="photo.png" alt="Photo of Josef">
-            </a>
-        </div>
 
-        <div id="projects">
-            <h1>My Projects</h1>
-            <table>
-                <tr> <!-- first row -->
-                    <td><button type="button" class="btnCard" id="project1" name="button">1. ATM</button></td>
-                    <td><button type="button" class="btnCard" id="project2" name="button">2. Quiz</button></td>
-                    <td><button type="button" class="btnCard" id="project3" name="button">3. ToDo</button></td>
-                    <td><button type="button" class="btnCard" id="project4" name="button">4. Login</button></td>
-                </tr>
-            </table>
-        </div>
+            <div id="projects">
+                <h1>My Projects</h1>
+                <table>
+                    <tr>
+                        <!-- first row -->
+                        <td><button type="button" class="btnCard" id="project1" name="button">1. ATM</button></td>
+                        <td><button type="button" class="btnCard" id="project2" name="button">2. Quiz</button></td>
+                        <td><button type="button" class="btnCard" id="project3" name="button">3. ToDo</button></td>
+                        <td><button type="button" class="btnCard" id="project4" name="button">4. Login</button></td>
+                    </tr>
+                </table>
+            </div>
 
-        <div id="countDown">
-            <h1>Time left in Korea</h1>
-            <iframe src="https://free.timeanddate.com/countdown/i81wkges/n204/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000080/cpc000/pcfff/tcfff/fs250/szw320/szh135/tac000/tptTime%20since%20Event%20started%20in/tpc000/mat%20/mac000/mpc000/iso2021-12-11T22:00:00" allowtransparency="true" frameborder="0" width="221" height="69"></iframe>
-        </div>
+            <div id="countDown">
+                <h1>Time left in Korea</h1>
+                <iframe
+                    src="https://free.timeanddate.com/countdown/i81wkges/n204/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000080/cpc000/pcfff/tcfff/fs250/szw320/szh135/tac000/tptTime%20since%20Event%20started%20in/tpc000/mat%20/mac000/mpc000/iso2021-12-11T22:00:00"
+                    allowtransparency="true" frameborder="0" width="221" height="69"></iframe>
+            </div>
 
-        <script type="text/javascript" src="btn.js">
-        </script>
-    </main>
+            <script type="text/javascript" src="btn.js">
+            </script>
+        </main>
 
-</div>
-    
+    </div>
+
 </body>
 
 </html>
