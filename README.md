@@ -21,21 +21,3 @@ interests, etc.
 ### CSS file
 9. Create an **CSS file**, style.css, and link it to the profile page
 10. Include at least three **CSS rules** in the CSS file
-
-## ToDo (21/11/4)
-- [x] deploy to GitHub Pages (create a link)
-- [ ] update 'My Projects' part 
-  - [ ] projects card
-  - [ ] link to projects on GitHub Pages and GitHub repo
-  - [ ] overview of projects
-  - [ ] projects to add:
-    - [ ] ToDo App
-    - [x] Back account/ATM
-    - [ ] Quiz
-    - [ ] Login page
-- [ ] add special effect onclick() on the picture
-- [ ] add a link to blog (Dopisy Babičce)
-- [ ] update 'Skills' part
-- [ ] remove Bootstrap (after grading)
-- [ ] make the website dynamic (compatible for phones)
-- [ ] add 3 CSS animation (special effets)
