@@ -1,15 +1,28 @@
+/* .clickMe {
+    background-color: gray;
+} */
+
 .clickMe {
-    /* background-color: gray; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .clickMe p {
-    width: 55%;
+    height: 200px;
+    /* width: 55%; */
     /* background-color: lime; */
     text-align: center;
-    margin-top: 25px;
-    color: lightslategray;
-}
+    /* margin-top: 25px; */
+    color: black;
 
+    z-index: 2;
+    background-color: white;
+
+    margin: 0;
+    border: 3px solid #cc881b;
+}
 
 .move {
     -webkit-animation: action 2s infinite alternate;

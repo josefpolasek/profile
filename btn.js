@@ -19,8 +19,8 @@ page.addEventListener("click", btn => {
 // hover image
 let counter = 0;
 document.getElementById("profilePhoto").onclick = () => { 
-    document.getElementById("arrowClick").classList.remove("move");
-    document.getElementById("arrowClick").style.display = "none";
+    // document.getElementById("arrowClick").classList.remove("move");
+    // document.getElementById("arrowClick").style.display = "none";
     if (counter%2 === 0) {
         document.getElementById("profilePhoto").src="./images/p4.png"; /* "./images/profileLight.png"; */
         document.getElementById("websiteIcon").href="./images/p4.png";
@@ -38,5 +38,6 @@ document.getElementById("profilePhoto").onclick = () => {
 };
 
 window.setTimeout ( () => {
-    document.getElementById("arrowClick").classList.add("move");
-}, 5000);
+    document.getElementById("profilePhoto").classList.remove("moveDown");
+    document.getElementById("websiteIcon").href="./images/profileDark.png";
+}, 2000);
