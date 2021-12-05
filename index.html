@@ -3,27 +3,37 @@
 
 <head>
     <title>Profile Page</title>
-    <link id="websiteIcon" rel="icon" href="./images/profileDark.png" />
+    <link id="websiteIcon" rel="icon" href="" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="projects.css">
 
-    <!-- styles: Bootstrap and style.css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- delete -->
+    <!-- <link rel="stylesheet" href="intro.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- JavaScript -->
+    <!-- <script type="text/javascript" src="app.js" async></script> -->
+    <script type="text/javascript" src="profile-click.js" async></script>
+    <script type="text/javascript" src="funfact.js" async></script>
+    <script type="text/javascript" src="countdown.js" async></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <!-- viewport -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
     <div id="profilePage">
-        <nav class="navbar navbar-expand-md navbar-light bg-white" id="navigation">
+        <!-- <nav class="navbar navbar-expand-md navbar-light bg-white" id="navigation">
 
             <a class="navbar-brand" href="index.html" id="polasek">Josef Polasek</a>
 
@@ -35,69 +45,219 @@
                     <a class="nav-link active" aria-current="page" href="#countDown">Time left in Korea</a>
                 </li>
             </ul>
+        </nav> -->
+
+        <nav id="nav">
+            <h1 class="funLink" id="josefPolasek">Josef Polasek</h1>
+            <div class="pageLinks" id="pageLinks">
+                <h2 id="cv" class="funLink">CV</h2>
+                <h2 id="projectsLink" class="funLink">Projects</h2>
+                <h2 id="copyMailNav" class="funLink">Contact</h2>
+                <h2 id="returnNav" class="funLink">Return date</h2>
+            </div>
         </nav>
 
         <main>
-            <div class="intro">
-                <div class="leftP">
-                    <p>Hello, I am Josef. I am currently an exchange student at <a
-                            href="https://enc.skku.edu/eng_enc/index.do" target="_blank">Sungkyunkwan University</a> in
-                        Suwon, South Korea. I am an aspiring front-end developer.</p>
-
-                    <h2>Skills</h2>
-                    <div id="skills">
-                        <table class="table table-borderless">
-                            <tr>
-                                <td><a href="">HTML</a></td>
-                                <td><a href="">CSS</a></td>
-                                <td><a href="">JavaScript</a></td>
-                                <td><a href="">Bootstrap</a></td>
-                                <td><a href="">JQuery</a></td>
-                                <td><a href="">GIT</a></td>
-                            </tr>
-                        </table>
+            <div class="topContaier">
+                <div class="intro">
+                    <div class="hello" id="hello">
+                        <h1 id="firstHello">Hello!</h1>
+                        <p>My name is Josef. I am currently an exchange student at
+                            <a class="funLink" id="skku" href="https://enc.skku.edu/eng_enc/index.do"
+                                target="_blank">Sungkyunkwan
+                                University</a>
+                            in Suwon, South Korea. I am an aspiring front-end developer.
+                        </p>
+                        <p>
+                            I have experience with
+                            <span id="htmlCSS" class="funLink">HTML/CSS</span>,
+                            <span id="javascript" class="funLink">JavaScript</span>,
+                            <span id="cpp" class="funLink">C/C++</span>,
+                            <span id="python" class="funLink">Python</span>,
+                            <span id="git" class="funLink">Git</span> and
+                            <span id="linux" class="funLink">Linux</span>.
+                        </p>
+                        <p>
+                            I would be happy to join your team as a junior!
+                        </p>
+                        <p>
+                            Contact me: <span id="copyMail" class="funLink">josefpolasek12@gmail.com</span>
+                        </p>
                     </div>
 
-                    <h2>Contact and profiles</h2>
-                    <ul>
-                        <li>Email: <a href="mailto:josefpolasek12@gmail.com"
-                                target="_blank">josefpolasek12@gmail.com</a></li>
-                        <li>GitHub: <a href="https://github.com/josefpolasek" target="_blank">josefpolasek</a></li>
-                        <li>Code Cademy: <a href="https://www.codecademy.com/profiles/flyingAdler"
-                                target="_blank">@flyingAdler</a></li>
-                        <li>Stack Overflow: <a href="https://stackoverflow.com/users/15493878/adler"
-                                target="_blank">adler</a></li>
-                    </ul>
+                    <!-- <h2>Public profiles</h2> -->
+                    <div class="profiles" id="profiles">
+                        <a class="funLink link" href="https://github.com/josefpolasek" target="_blank">
+                            <img class="funLink" id="linkLogo1" src="./images/github-logo.png" alt="github-logo" />
+                            <p id="visitGithub" class="funLink">GitHub</p>
+                        </a>
+                        <a class="funlink link" href="https://stackoverflow.com/users/15493878/adler" target="_blank">
+                            <img class="funLink" id="linkLogo2" src="./images/stackoverflow.ico"
+                                alt="stackOverflow-logo" />
+                            <p class="funLink" id="visitStack">Stack Overflow</p>
+                        </a>
+                        <a class="funlink link" href="https://www.codecademy.com/profiles/flyingAdler" target="_blank">
+                            <img class="funLink" id="linkLogo3" src="./images/codecademy.ico" alt="codecademy-logo" />
+                            <p class="funLink" id="visitCode">Codecademy</p>
+                        </a>
+                    </div>
                 </div>
-                <!-- <a href=""> -->
-                <img src="./images/profileDark.png" alt="Photo of Josef" id="profilePhoto">
-                <!-- <img src="profile.png" alt="cartoon version" class="drawnImg"> -->
-                <!-- </a> -->
+
+                <div class="photoContainer">
+                    <img class="moveDown" id="profilePhoto" src="./images/profileDark.png" alt="Photo of Josef">
+                    <div id="funfact" class="funfact">
+                        <!-- SPECIAL -->
+                        <p id="initialText" class="factText largeText">Click a blue text and see what happens.</p>
+                        <p id="josefPolasekClicked" class="factText largeText">Click on a profile photo to change a
+                            theme - LIGHT/DARK.</p>
+
+                        <!-- NAVIGATION BAR -->
+                        <p id="CVopened" class="factText largeText">Curriculum Vitae opened in a new tab!</p>
+                        <p id="projectsScrolled" class="factText largeText">Scrolled to projects!</p>
+                        <p id="returnScrolled" class="factText largeText">Scrolled to time left in Korea!</p>
+
+                        <!-- SKKU -->
+                        <p id="skkuVisited" class="factText largeText">Sungkyunkwan University website opened in a new
+                            tab!</p>
+
+                        <!-- LANGUAGES AND SKILLS -->
+                        <p id="htmlShow" class="factText">I have a bit of an experience with <span>Bootstrap</span>. I
+                            used it in the beginning, but I no longer use it. Instead I like to
+                            write everything by myself using <span>Flexbox</span> and <span>Grid</span>. In the future I
+                            would like to progress to <span>Sass/Less</span>.
+                        </p>
+
+                        <p id="javaScriptShow" class="factText"> I wrote some websites with <span>JQuery</span>. I think
+                            it would be time to learn some frameworks like <span>Angular</span>, <span>React</span>, or
+                            <span>Redux</span>.
+                        </p>
+
+                        <p id="cppShow" class="factText">I used <span>C</span> in the last two semesters. It's suitable
+                            for learning data structures and algorithms; otherwise, Javascript is more beautiful. I
+                            wrote <span>C/C++</span> because <span>C</span> alone wouldn't look pretty :)
+
+                        <p id="pythonShow" class="factText">I have a basic knowledge of <span>Python</span>. It's
+                            excellent for writing short programs. Or maybe for writing everything else :) I haven't used
+                            it for web development, not yet.</p>
+
+                        <p id="gitShow" class="factText">I learned <span>Git</span> and started using
+                            <span>Github</span> during this semester. I had a subject <span>Open Source Software</span>,
+                            where we learned about (g)it. It makes me so happy that I finally can be part of the
+                            open-source community.
+                        </p>
+
+                        <p id="linuxShow" class="factText">I used <span>Windows Subsystem for Linux</span> in the last
+                            semester. In August, I rebooted my system and switched to <span>Ubuntu</span>. In the
+                            future, I would like to switch to <span>macOS</span> and use <span>Linuxwithout GUI</span>.
+                            After all, <span>Bash</span> is amazing!</p>
+
+                        <!-- MAIL -->
+                        <p id="mailCopied" class="factText largeText">The email address was successfully copied into the
+                            clipboard!</p>
+
+                        <!-- PROFILES -->
+                        <p id="gitVisited" class="factText largeText">Github profile opened in a new tab!</p>
+                        <p id="stackVisited" class="factText largeText">Stack Overflow profile opened in a new tab!</p>
+                        <p id="codeVisited" class="factText largeText">Codecademy profile opened in a new tab!</p>
+
+                        <!-- LIGHT THEME -->
+                        <p id="themeDark" class="factText largeText">DARK THEME</p>
+                        <p id="themeLight" class="factText largeText">LIGHT THEME</p>
+                    </div>
+
+                </div>
             </div>
 
-            <div id="projects">
-                <h1>My Projects</h1>
-                <table>
-                    <tr>
-                        <!-- first row -->
-                        <td><button type="button" class="btnCard" id="project1" name="button">1. ATM</button></td>
-                        <td><button type="button" class="btnCard" id="project2" name="button">2. Quiz</button></td>
-                        <td><button type="button" class="btnCard" id="project3" name="button">3. ToDo</button></td>
-                        <td><button type="button" class="btnCard" id="project4" name="button">4. Login</button></td>
-                    </tr>
-                </table>
+
+            <div class="projects" id="projects">
+                <div class="containerHeading">
+                    <h1 id="myProjects">My Projects</h1>
+                </div>
+                <div class="projectBoard">
+                    <div class="card">
+                        <div id="eshopImg" class="projectImg"></div>
+                        <h2>Eshop</h2>
+                        <p> Using <span>MySQL</span> and <span>Java Server Pages</span> for the first time. <span style="color:darkred; font-weight: bold;">This project is NOT FINISHED YET.</span>
+                        </p>
+                        <a href="https://github.com/josefpolasek/eshop" target="_blank">
+                            <p>Visit repository <img src="./images/github-logo.png" alt="github-logo" />
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div id="yodaIMG" class="projectImg"></div>
+                        <h2>Ask Yoda</h2>
+                        <p> Music recommendation system using <span>Spotify API</span>. Group project, in which I did the front end part.
+                        </p>
+                        <a href="https://github.com/skkuoss/AskYoda_dashboard" target="_blank">
+                            <p>Visit repository <img src="./images/github-logo.png" alt="github-logo" />
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div id="taskBoardIMG" class="projectImg"></div>
+                        <h2>Task Board</h2>
+                        <p> Web app similiar to Google Keep. You can create a card with a task and add an image. It is responsive.
+                        </p>
+                        <a href="https://github.com/josefpolasek/taskBoard" target="_blank">
+                            <p>Visit repository <img src="./images/github-logo.png" alt="github-logo" />
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div id="loginIMG" class="projectImg"></div>
+                        <h2>Login app</h2>
+                        <p> The front end part of a login and register system. It checks user input and says what to change.
+                        </p>
+                        <a href="https://github.com/josefpolasek/loginApp" target="_blank">
+                            <p>Visit repository <img src="./images/github-logo.png" alt="github-logo" />
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div id="atmIMG" class="projectImg"></div>
+                        <h2>Online ATM</h2>
+                        <p> Online ATM/bank system that lets the user view, withdraw, deposit, and transfer his/her money.
+                        </p>
+                        <a href="https://github.com/josefpolasek/atm" target="_blank">
+                            <p>Visit repository <img src="./images/github-logo.png" alt="github-logo" />
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div id="countDown">
-                <h1>Time left in Korea</h1>
-                <iframe
-                    src="https://free.timeanddate.com/countdown/i81wkges/n204/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000080/cpc000/pcfff/tcfff/fs250/szw320/szh135/tac000/tptTime%20since%20Event%20started%20in/tpc000/mat%20/mac000/mpc000/iso2021-12-11T22:00:00"
-                    allowtransparency="true" frameborder="0" width="221" height="69"></iframe>
+            <h1 id="countDown">Time left in Korea</h1>
+            <div class="countdownBoard" id="countdownBoard">
+                <div class="container-day">
+                    <h2 class="time" id="day">Time</h2>
+                    <h3>Days</h3>
+                </div>
+                <div class="container-hour">
+                    <h2 class="time" id="hour">Time</h2>
+                    <h3>Hours</h3>
+                </div>
+                <div class="container-minute">
+                    <h2 class="time" id="minute">Time</h2>
+                    <h3>Minutes</h3>
+                </div>
+                <div class="container-second">
+                    <h2 class="time" id="second">Time</h2>
+                    <h3>Seconds</h3>
+                </div>
             </div>
 
-            <script type="text/javascript" src="btn.js">
-            </script>
         </main>
+
+        <footer id="footer">
+            <a href="https://github.com/josefpolasek/profile" target="_blank">
+                <p>Visit repository of this project <img src="./images/github-logo.png" alt="github-logo" /></p>
+            </a>
+        </footer>
 
     </div>
 
