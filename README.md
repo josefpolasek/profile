@@ -1,23 +1,9 @@
 # Profile page
 
-First version of my profile page. This is a second homework for the subject Open Source Software Practice at SKKU. 
-You can view the page here: https://josefpolasek.github.io/profile/
-My page was inspired by the teacher's page: https://www.jaeminjo.com/
+View the webpage here: https://josefpolasek.github.io/profile/
+Or visit the branch for the class of Open Source Software Practice: https://github.com/josefpolasek/profile/tree/oss
 
-## Requirements:
-### Basic
-1. The profile page must show your **personal information**, such as name, affiliation, contact information (email), your GitHub account,
-interests, etc.
-2. Include a profile **photo** using `<img>`
-3. Include at least three **hyperlinks** using `<a>`
-4. Include at least one **table** using `<table>`
-5. Include at least one **list** using `<ul>` or `<ol>`
-
-### Bootstrap
-6. Link the **Bootstrap toolkit** to your page. See https://getbootstrap.com/docs/5.0/
-7. Use at least **three classes** that Bootstrap provides. See https://getbootstrap.com/docs/5.0/getting-started/introduction/.
-8. Use at least three **utility classes** (other than the three classes you used above).
-
-### CSS file
-9. Create an **CSS file**, style.css, and link it to the profile page
-10. Include at least three **CSS rules** in the CSS file
+### I made the website responsive
+<img src="https://user-images.githubusercontent.com/90244904/144749710-d8320dd9-0da3-4faf-9e9e-cd48c9fc139b.png" height="400" align="center" /> 
+<img src="https://user-images.githubusercontent.com/90244904/144749713-4f93f54d-aa4b-496c-a047-87ae02bc43b1.png" width="300" align="center"/> 
+<img src="https://user-images.githubusercontent.com/90244904/144749716-c3c8a9d9-6f1d-415a-8cbe-1ad9b91e296b.png" width="200" align="center"/> 
